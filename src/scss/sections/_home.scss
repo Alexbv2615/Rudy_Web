@@ -1,0 +1,82 @@
+.home{
+    background-image: url('/image/baner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    margin-top: 80px;
+    height: 75vh;
+    display: flex;
+
+    &-info{
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 8rem;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 9rem;
+        gap: 1.5rem;
+        text-shadow: 1px 1px 25px rgb(2, 2, 2);
+        &-title{
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+            h2{
+                color: white;
+                font-size: 32px;
+            }
+            h1{
+                color: $second;
+                font-weight: 700;
+                font-size: 48px;
+            }
+        }
+        &-text{
+            color: white;
+            font-size: 22px;
+            font-weight: 400;
+            width: 80%;
+        }
+        &-btn{
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            background-color: $second;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            &:hover{
+                scale: calc(1.06);
+                box-shadow: 1px 1px 12px $second;
+            }
+        }
+    }
+    &-img{
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        img{
+            position: relative;
+            animation: floatingEffect 3s ease-in-out infinite; /* Aplicamos la animación "floatingEffect" */
+            width: 26rem;
+        }
+    }
+}
+
+@keyframes floatingEffect {
+    0% {
+      transform: translateY(0); /* Comenzamos sin desplazamiento */
+    }
+    50% {
+      transform: translateY(-10px); /* Desplazamos la imagen hacia arriba en la mitad de la animación */
+    }
+    100% {
+      transform: translateY(0); /* Regresamos la imagen a su posición original al final de la animación */
+    }
+  }

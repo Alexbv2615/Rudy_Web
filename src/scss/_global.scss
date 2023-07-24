@@ -1,0 +1,27 @@
+//Global
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: $background;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body, 
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1,
+h2{
+    margin: 0;
+}
+  
+* {
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}

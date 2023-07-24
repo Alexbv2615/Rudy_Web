@@ -1,0 +1,36 @@
+.figura{
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+    width: 21rem;
+    padding: 20px;
+    z-index: 0;
+
+    img{
+        height: 8rem;
+    }
+    span{
+        height: 12rem;
+        color: white;
+        text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.682);
+        text-align: center;
+        padding: 6px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #134c7a9f;
+        backdrop-filter: blur(10px); /* Valor de blur para el efecto glass */
+        z-index: -1;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.575);
+        border-radius: 30px;
+    }
+}
