@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
 import Filosofia from "./sections/Filosofia";
+import Nosotros from "./sections/Nosotros";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <main>
       <Home/>
       <Filosofia/>
+      <Nosotros/>
     </main>
     </>
   )

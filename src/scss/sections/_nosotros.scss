@@ -1,0 +1,50 @@
+.nosotros{
+    // border: 2px solid blue;
+    height: 80vh;
+    display: flex;
+    &-text{
+        // border: 2px solid red;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10rem;
+        h1{
+            color: $second;
+            font-size: 36px;
+            position: relative;
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 28px;
+                width: 300px;
+                height: 4px;
+                margin-left: 280px;
+                background-color: $second;
+            }
+        }
+        h2{
+            color: $primary;
+            font-size: 22px;
+            margin-top: 1rem;
+        }
+        p{
+           color: $tertiary;
+           font-weight: 500;
+           font-size: 18px;
+           width: 35rem; 
+        }
+    }
+    &-img{
+        // border: 2px solid green;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10rem;
+        img{
+            width: 25rem;
+        }
+    }
+}
