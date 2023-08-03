@@ -1,0 +1,31 @@
+.clientes{
+    // border: 2px solid red;
+    padding: 20px 0; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        color: $primary;
+        margin: 20px 0;
+    }
+    &-slider{
+        // border: 2px solid blue;
+        width: 80vw;
+        margin: 20px 0; 
+        &-card{
+            // border: 2px solid green;
+            height: 14rem;
+            &-content{
+                // border: 2px solid black;
+                height: 14rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    // border: 2px solid yellow;
+                    height: 10rem;
+                }
+            }
+        }
+    }
+}
