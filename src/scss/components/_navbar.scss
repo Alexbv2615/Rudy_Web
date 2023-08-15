@@ -10,6 +10,15 @@
     justify-content: space-around;
     width: 100vw;
     box-shadow: 0px 1px 10px rgb(0, 0, 0);
+
+    .responsive{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+
+
     &-logo{
         height: 55px;
     }
@@ -35,7 +44,7 @@
             width: 20px;
         }
         &-text{
-            width: 200px;
+            width: 100px;
             font-size: small;
         }
     }
@@ -48,6 +57,61 @@
             &:hover{
                 color: $second;
                 text-shadow: 1px 1px 10px black;
+            }
+        }
+    }
+}
+
+//mediaquery
+
+@media (max-width: 1200px) {
+    .nav{
+        &-ul{
+            gap: 4rem;
+        }
+    }
+}
+
+@media (max-width: 1060px) {
+    .nav{
+        justify-content: space-between;
+        &-ul{
+            display: none;
+        }
+        &-whatsapp{
+            display: none;
+        }
+        &-ubi{
+            display: none;
+        }
+        .responsive{
+            display: flex;
+            align-items: center;
+            margin-right: 4rem;
+            z-index: 100;
+            &-menu{
+                cursor: pointer;
+            }
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            position: fixed;
+            z-index: 99;
+            top: 0px;
+            right: 0;
+            background-color: #5c94bcf6;
+            text-shadow: 1px 1px 12px black;
+            width: min(75vw, 300px);
+            height: 100%;
+            .ul{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                gap: 8rem;
             }
         }
     }

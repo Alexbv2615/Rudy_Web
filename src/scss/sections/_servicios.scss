@@ -2,11 +2,11 @@
     background-image: url('/image/servicios.png');
     background-repeat: no-repeat;
     background-size: cover;
-    // background-attachment: fixed;
-    // background-position: center;
+    background-attachment: fixed;
+    background-position: center;
 
     height: 90vh;
-    margin-top: 8rem;
+    margin-top: 15rem;
     text-shadow: 0px 0px 20px black;
 
     display: flex;
@@ -50,6 +50,53 @@
             // border: 2px solid blue;
             img{
                 width: 10rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .servicios{
+        h1{
+            font-size: 28px;
+        }
+        &-list{
+            font-size: 16px;
+            
+            &-top{
+                img{
+                    width: 8rem;
+                }
+            }
+            &-bottom{
+                img{
+                    width: 8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1060px) {
+    .servicios{
+        height: 160vh;
+        h1{
+            margin: 1rem 0;
+        }
+        &-list{
+            font-size: 18px;
+            height: 100%;
+            flex-direction: column;
+
+            &-top{
+                img{
+                    width: 10rem;
+                }
+            }
+            &-bottom{
+                img{
+                    width: 10rem;
+                }
             }
         }
     }

@@ -48,3 +48,115 @@
         }
     }
 }
+
+// media querys
+
+@media (max-width: 1300px) {
+    .nosotros{
+        &-text{
+            margin-left: 2rem;
+            h1{
+                &::after{
+                    width: 250px;
+                }
+            }
+        }
+        &-img{
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .nosotros{
+        &-text{
+            margin-left: 0;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 34px;
+                &::after{
+                    width: 200px;
+                    top: 26px;
+                    margin-left: 260px;
+                }
+            }
+            h2{
+                font-size: 18px;
+            }
+            p{
+               font-size: 16px;
+               width: 30rem; 
+            }
+        }
+        &-img{
+            img{
+                width: 20rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .nosotros{
+        height: 110vh;
+        flex-direction: column;
+        &-text{
+            h1{
+                font-size: 30px;
+                &::after{
+                    width: 80px;
+                    top: 22px;
+                    margin-left: 240px;
+                }
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 4px;
+                    background-color: $second;
+                    width: 80px;
+                    top: 22px;
+                    margin-left: -110px;
+                }
+            }
+            h2{
+                font-size: 16px;
+                text-align: center;
+            }
+            p{
+               font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .nosotros{
+        height: 110vh;
+        flex-direction: column;
+        &-text{
+            p{
+                max-width: 90%;
+            }
+            h1{
+                font-size: 24px;
+                &::after{
+                    width: 40px;
+                    top: 18px;
+                    margin-left: 190px;
+                }
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 4px;
+                    background-color: $second;
+                    width: 40px;
+                    top: 18px;
+                    margin-left: -60px;
+                }
+            }
+        }
+    }
+}

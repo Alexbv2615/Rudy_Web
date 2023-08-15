@@ -1,0 +1,169 @@
+.ServiciosInfo{
+    &-Ingenieria{
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        &-info{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 0 5rem;
+            // border: 2px solid blue;
+            height: fit-content;
+            &-title{
+                // border: 2px solid red;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                img{
+                    width: 90px;
+                }
+                h1{
+                    color: $second;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 18px;
+                        width: 300px;
+                        height: 4px;
+                        margin-left: 310px;
+                        background-color: $second;
+                    }
+                }
+            }
+            p{
+                // border: 2px solid red;
+                width: 90%;
+                align-self: center;
+                color: $tertiary;
+            }
+            ul{
+                // border: 2px solid blue;
+                width: 90%;
+                align-self: center;
+                color: $primary;
+                font-weight: 600;
+                column-count: 2;
+                column-gap: 20px;
+            }
+        }
+        &-img{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            // border: 2px solid green;
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+    &-Acabados{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 12px;
+        &-info{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 0 5rem;
+            // border: 2px solid blue;
+            height: fit-content;
+            &-title{
+                // border: 2px solid red;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                gap: 2rem;
+                img{
+                    width: 90px;
+                }
+                h1{
+                    color: $second;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 18px;
+                        width: 240px;
+                        height: 4px;
+                        margin-left: -260px;
+                        background-color: $second;
+                    }
+                }
+            }
+            p{
+                // border: 2px solid red;
+                width: 90%;
+                align-self: center;
+                color: $tertiary;
+            }
+            ul{
+                // border: 2px solid blue;
+                width: 90%;
+                align-self: center;
+                color: $primary;
+                font-weight: 600;
+                column-count: 2;
+                column-gap: 20px;
+            }
+        }
+        &-img{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            // border: 2px solid green;
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 1060px) {
+    .ServiciosInfo{
+        &-Ingenieria{
+            flex-direction: column;
+            padding: 10px;
+            &-info{
+                flex-direction: column;
+                padding: 0;
+                &-title{
+                    gap: 1rem;
+                    img{
+                        width: 80px;
+                    }
+                    h1{
+                        font-size: 22px;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+                p{
+                    width: 95%;
+                }
+                ul{
+                    width: 95%;
+                    column-count: 1;
+                    
+                }
+            }
+            &-img{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

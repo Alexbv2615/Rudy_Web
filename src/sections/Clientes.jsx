@@ -6,9 +6,6 @@ function Clientes() {
    // DATOS DE CADA PROYECTOS
    const clients = [
     {
-      image: '/image/clientes/almark.png'
-    },
-    {
       image: '/image/clientes/laive.png'
     },
     {
@@ -25,6 +22,9 @@ function Clientes() {
     },
     {
       image: '/image/clientes/mercado.png'
+    },
+    {
+      image: '/image/clientes/almark.png'
     }
    ]
 

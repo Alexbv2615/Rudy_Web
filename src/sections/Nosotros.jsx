@@ -5,7 +5,7 @@ function Nosotros() {
     <div className='nosotros'>
       <section className='nosotros-text'>
         <h1>Sobre nosotros</h1>
-        <h2>Constructora y Servicios Generales Villalobos S.A.C.</h2>
+        <h2>Constructora y Servicios Generales Villalobos</h2>
         <p>
             Somos una empresa peruana dedicada al rubro de la construcción y servicio de mantenimiento preventivo, predictivo, correctivo e instalaciones de equipos eléctricos, mecánicos, metal mecánica, electrónicos, trabajos de pintura, pisos industriales, vidrios y obras civiles en general. Nos dirigimos al ámbito privado como público con un alcance en la ciudad de Lima y en todo el territorio peruano.
         </p>

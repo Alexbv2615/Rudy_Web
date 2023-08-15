@@ -80,3 +80,47 @@
       transform: translateY(0); /* Regresamos la imagen a su posición original al final de la animación */
     }
   }
+
+
+// media query
+
+@media (max-width: 1425px) {
+    .home{
+        &-info{
+            padding-left: 1rem;
+            &-title{
+                h2{
+                    font-size: 28px;
+                }
+                h1{
+                    font-size: 36px;
+                }
+            }
+            &-text{
+                font-size: 20px;            
+            }
+        }
+        &-img{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1060px) {
+    .home{
+        &-info{
+            &-title{
+                flex-direction: column;
+                h1{
+                    font-size: 32px;
+                }
+            }
+            &-text{
+                font-size: 18px;            
+            }
+        }
+        &-img{
+            display: none;
+        }
+    }
+}

@@ -4,6 +4,7 @@ import Filosofia from "./sections/Filosofia";
 import Nosotros from "./sections/Nosotros";
 import Servicios from "./sections/Servicios";
 import Clientes from "./sections/Clientes";
+import ServiciosInfo from "./sections/ServiciosInfo";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Nosotros/>
       <Servicios/>
       <Clientes/>
+      <ServiciosInfo/>
     </main>
     </>
   )

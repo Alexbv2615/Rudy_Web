@@ -34,3 +34,32 @@
         border-radius: 30px;
     }
 }
+
+@media (max-width: 1100px) {
+    .figura{
+        width: 18rem;
+        padding: 20px;
+        img{
+            height: 8rem;
+        }
+        span{
+            height: 10.5rem;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .figura{
+        width: 80%;
+        padding: 20px;
+        img{
+            height: 8rem;
+        }
+        span{
+            height: auto;
+            font-size: 14px;
+            
+        }
+    }
+}
